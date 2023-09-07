@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarDekho</title>
+    <link rel="stylesheet" href="./emistyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<!--------  header section starts here -------->
+    <header class="header">
+        <div class="topheader">
+            <div class="logocontainer">
+                <div class="logorow">
+                    <div class="logo">
+                        <a href="">
+                            <img width="174" height="42" src="https://stimg.cardekho.com/pwa/img/carDekho-newLogo.svg"
+                                loading="eager" alt="CarDekho.com - Best place to buy New and Used Cars in India">
+                        </a>
+                    </div>
+
+                    <div class="searcharea">
+                        <div class="text">
+                            <input type="text" placeholder="Search cars eg. Honda Elevate">
+                            <button class="material-icons searchlens">search</button>
+                        </div>
+
+                    </div>
+
+                    <div class="language">
+                        <div class="languagelist">
+                            <select name="English" id="lang">
+                                <option class="option">English</option>
+                                <option class="option">हिन्दी</option>
+                                <option class="option">ಕನ್ನಡ</option>
+                                <option class="option">मराठी</option>
+                            </select>
+                        </div>
+                        <div class="material-icons">
+                            favorite_border
+                        </div>
+                        <div class="login">
+                            <span class="material-icons">person_outline</span>
+                            <p>Login/Register</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottomheader">
+            <div class="categories">
+                <div class="tags newcars"><a href="">NEW CARS</a>
+                    <p class="material-icons downarrow">arrow_drop_down</p>
+                </div>
+                <div class="tags"><a href="">BUY & SELL USED CARS</a>
+                    <p class="material-icons downarrow">arrow_drop_down</p>
+                </div>
+                <div class="tags"><a href="">NEWS, REVIEWS & VIDEOS</a>
+                    <p class="material-icons downarrow">arrow_drop_down</p>
+                </div>
+                <div class="tags"><a href="">CAR SERVICES</a>
+                    <p class="material-icons downarrow">arrow_drop_down</p>
+                </div>
+
+            </div>
+            <div class="location">
+                <span class="material-icons place">place</span>
+                <p>Ahmedabad</p>
+                <span class="material-icons">arrow_drop_down</span>
+            </div>
+        </div>
+    </header>
+<!--------   Header section ends here ------->
+    <!-------- responsive header  ---------->
+    <nav class="responsive_nav">
+        <div class="nav_div1">
+            <div class="nav_div1p"><span class="material-symbols-outlined">
+                sort
+                </span><span><img src="./carDekho-newLogo (1).svg" alt=""></span></div>
+            <div> <span class="material-symbols-outlined">
+                favorite
+                </span><span class="material-symbols-outlined">
+                    account_circle
+                    </span></div>
+        </div>
+        <div class="navs_div2"><input type="search" placeholder=" Search Cars eg.Honda Elevate"><span class="material-symbols-outlined">
+            search
+            </span></div>
+     </nav>
+     <!-- responsive header end  -->
+<!-------------------   mid section ----------------->
+    <div class="cd_container">
+        <h1 style="padding-left: 25px;">Car Loan EMI Calculator</h1>
+        <div class="rows">
+<!----------------------------------Left part ------------------------->
+            <div class="row1">
+<!-------------------   First Section EMI Calculator ------------------->
+                <section class="first">
+                    <h2>Car Loan EMI Calculator</h2>
+                    <div class="cc_more">
+                        <p>A car loan EMI calculator is a tool that helps you calculate the monthly instalment (EMI) you
+                            will have to pay for a car loan. It takes into account the loan amount, interest rate, and
+                            loan tenure to give you an estimate of the EMI.</p>
+                        <span class="subTitle">To use a car loan EMI calculator, you will need to input the following
+                            information:</span>
+                        <hr>
+                        <div class="viewMore"> <span style="color: blue;">Read More </span></div>
+                    </div>
+                </section>
+                <div class="emiCalculate">
+                    <h2>Calculate your Car Loan EMI</h2>
+                    <div class="filterDropdown">
+                        <div class="searchBrand">
+                            <ul class="feature_tag2">
+                                <li>
+                                    <div class="div1">
+                                        <select class="Brand" name="" id="">
+                                            <option value="">Select Brand</option>
+                                            <option value="">Maruti</option>
+                                            <option value="">Tata</option>
+                                            <option value="">Kia</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="div2">
+                                        <select class="Model" name="" id="">
+                                            <option value="">Select Model</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="div3">
+                                        <select class="Variant" name="" id="">
+                                            <option value="">Select Variant</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="emiCalculateSlider">
+                        <div class="emiInner">
+                            <div class="downPayment">
+                                <div class="topText">
+                                    <span class="sliderName">Down Payment</span>
+                                    <span class="slider_minVal">
+                                        <p> &#x20B9; 0</p>
+                                    </span>
+                                </div>
+                                <hr class="slider">
+                                <div class="priceRange">
+                                    <span class="sliderName">0</span>
+                                    <span class="slider_minVal">
+                                        <p> &#x20B9; 0</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="downPayment">
+                                <div class="topText">
+                                    <span class="sliderName">Bank Interest Rate</span>
+                                    <span class="slider_minVal">
+                                        8 %
+                                    </span>
+                                </div>
+                                <hr class="slider">
+                                <div class="priceRange">
+                                    <span class="sliderName">0</span>
+                                    <span class="slider_minVal">
+                                        22 %
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="loanPeriod clearfix">
+                                <span>Loan Period ( Years )</span>
+                                <ul class="btnWrp">
+                                    <li class="sprtBtn">
+                                        <input type="radio" name="KMDriven" checked="true" id="km0" value="1" />
+                                        <label for="km0" class="anc">1</label>
+                                    </li>
+                                    <li class="sprtBtn">
+                                        <input type="radio" name="KMDriven" id="km1" value="2" />
+                                        <label for="km1" class="anc">2</label>
+                                    </li>
+                                    <li class="sprtBtn">
+                                        <input type="radio" name="KMDriven" id="km2" value="3" />
+                                        <label for="km2" class="anc">4</label>
+                                    </li>
+                                    <li class="sprtBtn">
+                                        <input type="radio" name="KMDriven" id="km3" value="5" />
+                                        <label for="km3" class="anc">5</label>
+                                    </li>
+                                    <li class="sprtBtn">
+                                        <input type="radio" name="KMDriven" id="km4" value="6" />
+                                        <label for="km4" class="anc">6</label>
+                                    </li>
+                                    <li class="sprtBtn">
+                                        <input type="radio" name="KMDriven" id="km5" value="7" />
+                                        <label for="km5" class="anc">7</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="amountDetail">
+                                <ul>
+                                    <li>
+                                        <div class="amt_p">
+                                            <p>Total Loan Amount</p>
+                                            <p class="price"> &#x20B9; 0</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="amt_p">
+                                            <p>Payable Amount</p>
+                                            <p class="price"> &#x20B9; 0</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="amt_p">
+                                            <p>You &#x27;&#x27;ll pay extra</p>
+                                            <p class="price"> &#x20B9; 0</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="totalAmount">
+                                <div class="emiTotaleBlock">
+                                    <div class="emiTotaleIn">
+                                        <div class="permonthprice">
+                                            EMI<span>per month</span>
+                                        </div>
+                                        <div class="emiTotale" id="emibelowtext">
+                                            <span id="emiPerMonth">₹0</span>
+                                            <div class="emitext">Calculated on On Road Price</div>
+                                        </div>
+                                        <div class="social">
+                                            <div class="share">
+                                                <div title="Social Share">
+                                                    <p>&#x1F4E2; Share</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttonholder"></div>
+                            </div>
+                            <div class="clearfix emiButtonContainer">
+                                <div class="emiButtonInner">
+                                    <div class="buttonHolderTop">
+                                        <div class="buttonHolder">
+                                            <span class="button">Get Bank Quotation</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix callDesc">
+                                At CarDekho, we can help you get the best deal on your loans. Please call us on <a
+                                    href="tel:1800 200 3000">1800 200 3000</a>
+                                for help.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!------------- EMI Section ends -------------------->
+<!-------------------Cars Cards Section ----------------->
+                <!-- section2 -->
+                <section class="section2">
+                    <h1>Search New Cars By Price</h1>
+                    <div>
+                        <ul>
+                            <li>1 - 5 Lakh</li>
+                            <li>5 - 10 Lakh</li>
+                            <li>10 - 15 Lakh</li>
+                            <li>15 - 20 Lakh</li>
+                            <li>20 - 35 Lakh</li>
+                            <li>35 - 50 Lakh</li>
+                            <li>50 Lakh - 1 Crore</li>
+                            <li>Above 1 Crore</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="feature_tag1">
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Thar/10743/1690192572470/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5>Mahindra Thar</h5>
+                                <h4>₹10.54-16.78 Lakh*</h4>
+                                <span>View offers</span>
+                                <input type="button" value="Check Thar EMI">
+                            </div>
+                        </div>
+
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Nexon/9977/1683047876204/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5>TATA Nexon</h5>
+                                <h4>₹10.54-16.78 Lakh*</h4>
+                                <span>View offers</span>
+                                <input type="button" value="Check Nexon EMI">
+                            </div>
+                        </div>
+
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Exter/9482/1684926596004/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5>Hyundai Exter</h5>
+                                <h4>₹10.54-16.78 Lakh*</h4>
+                                <span>View offers</span>
+                                <input type="button" value="Check Exter EMI">
+                            </div>
+                        </div>
+
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Fortuner/10903/1690544151440/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5>Toyota Fortuner</h5>
+                                <h4>₹10.54-16.78 Lakh*</h4>
+                                <span>View offers</span>
+                                <input type="button" value="Check Exter EMI">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div> <span style="color:blue;">View All Cars Under 5 Lakh</span></div>
+                </section>
+                <!-- section8 -->
+                <section class="section2" id="section8">
+                    <h1>Find offers on top brands</h1>
+                    <div>
+                        <ul>
+                            <li><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/maruti.jpg" alt="">
+                                <h5>Maruti</h5>
+                            </li>
+                            <li><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/tata.jpg" alt="">
+                                <h5>Tata</h5>
+                            </li>
+                            <li><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/kia.jpg" alt="">
+                                <h5>Kia</h5>
+                            </li>
+                            <li><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/toyota.jpg" alt="">
+                                <h5>Toyota</h5>
+                            </li>
+                            <li><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/hyundai.jpg" alt="">
+                                <h5>Hyundai</h5>
+                            </li>
+                            <li><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/mahindra.jpg" alt="">
+                                <h5>Mahindra</h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div> <span style="color:blue;">View All Brands</span></div>
+                </section>
+
+                <!-- section2 responsive -->
+                <section class="sec2_res">
+                    <ul class="sec2_div1">
+                        <li class="q"><img src="./image/a1.png" alt=""></li>
+                        <li class="q"><img src="./image/a2.png" alt=""></li>
+                        <li class="q"><img src="./image/a3.png" alt=""></li>
+                        <li class="q"><img src="./image/a4.png" alt=""></li>
+                    </ul>
+                    <div class="div2"> View More</div>
+                </section>
+                <!-- section2 -->
+                <section class="section2">
+                    <h1>Find right cars by body type</h1>
+                    <div class="rightCar">
+                        <ul>
+                            <li>SUV</li>
+                            <li>Hatchback</li>
+                            <li>MUV</li>
+                            <li>Sedan</li>
+                            <li>Luxury</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="feature_tag1">
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Thar/10743/1690192572470/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5>Mahindra Thar</h5>
+                                <h4>₹10.54-16.78 Lakh*</h4>
+                                <span>View offers</span>
+                                <input type="button" value="Check September offers">
+                            </div>
+                        </div>
+
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Nexon/9977/1683047876204/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5>Tata Nexon</h5>
+                                <h4>₹10.54-16.78 Lakh*</h4>
+                                <span>View offers</span>
+                                <input type="button" value="Check September offers">
+                            </div>
+                        </div>
+
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Exter/9482/1684926596004/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5>Hyundai Exter</h5>
+                                <h4>₹10.54-16.78 Lakh*</h4>
+                                <span>View offers</span>
+                                <input type="button" value="Check September offers">
+                            </div>
+                        </div>
+
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Fortuner/10903/1690544151440/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5>Toyota Fortuner</h5>
+                                <h4>₹10.54-16.78 Lakh*</h4>
+                                <span>View offers</span>
+                                <input type="button" value="Check September offers">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div> <span style="color:blue;">View All SUV Cars</span></div>
+                </section>
+
+                <!-- section news  -->
+                <!-- section2 -->
+                <section class="section2">
+                    <h1>Latest News on Cars</h1>
+                    <div class="rightCar">
+                        <ul>
+                            <li>Recent News</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="feature_tag1">
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Thar/10743/1690192572470/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5 style="font-weight: bold; color: black; ">
+                                    Hyundai i20 Facelift Unofficial Bookings Open At Select Deal...
+                                </h5>
+                                <p>Hyundai will launch the facelifted i20 this festive season</p>
+                            </div>
+                        </div>
+
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Nexon/9977/1683047876204/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5 style="font-weight: bold; color: black; ">Tata Harrier Facelift Spied With Bigger
+                                    Touchscreen System</h5>
+                                <p>The Harrier facelift test mule seems to carry a more premium touchscreen system,
+                                    similar to the ones seen in Land Rover ...</p>
+                            </div>
+                        </div>
+
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Exter/9482/1684926596004/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5 style="font-weight: bold; color: black; ">
+                                    Check Out The Variant-Wise Powertrains And Colour Options Of...
+                                </h5>
+                                <p>The Nexon facelift ditches the old variant nomenclature, for new Smart, Pure,
+                                    Creative, and Fearless</p>
+                            </div>
+                        </div>
+
+                        <div class="tag1 tt1">
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Fortuner/10903/1690544151440/front-left-side-47.jpg"
+                                alt="">
+                            <div>
+                                <h5 style="font-weight: bold; color: black; ">Skoda Introduces More Affordable Mid-spec
+                                    Variants of Kushaq...</h5>
+                                <p>The newly introduced variants of both the Kushaq and Slavia come with additional
+                                    chrome and accessories</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div> <span style="color:blue;">View All Car News</span></div>
+                </section>
+<!-------------        FAQ ------------->
+                <div class="valuationPage" id="sellCar">
+                    <div class="accordion">
+                        <div class="toggleAccordion">
+                            <h2>Frequently Asked Questions On Car Emi</h2>
+                            <div class="borderBottom  toggleAccordion specsFeaturesBlock   " id="">
+                                <h3>
+                                    How is car loan EMI calculated monthly?
+                                </h3>
+                                <span>+</span>
+                            </div>
+                            <div class="borderBottom  toggleAccordion specsFeaturesBlock   " id="">
+                                <h3>
+                                    What are the documents required to apply for a car loan?
+                                </h3>
+                                <span>+</span>
+                            </div>
+                            <div class="borderBottom  toggleAccordion specsFeaturesBlock   " id="">
+                                <h3>
+                                    What is the minimum down payment for a car loan?
+                                </h3>
+                                <span>+</span>
+                            </div>
+                            <div class="borderBottom  toggleAccordion specsFeaturesBlock   " id="">
+                                <h3>
+                                    What is the tenure for which I can avail a car loan?
+                                </h3>
+                                <span>+</span>
+                            </div>
+                            <div class="borderBottom  toggleAccordion specsFeaturesBlock   " id="">
+                                <h3>
+                                    What will be the rate of interest on a car loan?
+                                </h3>
+                                <span>+</span>
+                            </div>
+                            <div class="borderBottom  toggleAccordion specsFeaturesBlock   " id="">
+                                <h3>
+                                    What is the maximum number of years I can get a car loan for?
+                                </h3>
+                                <span>+</span>
+                            </div>
+                            <div class="borderBottom  toggleAccordion specsFeaturesBlock   " id="">
+                                <h3>
+                                    What happens when I pay a bigger amount than my actual EMI for a car loan?
+                                </h3>
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!----------------    Cars Section Ends --------------------->
+<!-----------    Left Section also Ends -->
+<!--------------      Right Part Starts here ------------->
+            <div class="row2">
+                <section class="row2_first">
+                    <h2>Running cost of your car</h2>
+                    <div class="drivingKM">
+                        <span class="drivingKM_heading">
+                            KM driven per day
+                            <span>20 km/day</span>
+                        </span>
+                        <ul class="btnWrp">
+                            <li class="sprtBtn">
+                                <input type="radio" name="KMDriven" checked="" id="km0" value="20" />
+                                <label for="km0" class="anc">20</label>
+                            </li>
+                            <li class="sprtBtn">
+                                <input type="radio" name="KMDriven" id="km1" value="30" />
+                                <label for="km1" class="anc">30</label>
+                            </li>
+                            <li class="sprtBtn">
+                                <input type="radio" name="KMDriven" id="km2" value="40" />
+                                <label for="km2" class="anc">40</label>
+                            </li>
+                            <li class="sprtBtn">
+                                <input type="radio" name="KMDriven" id="km3" value="50" />
+                                <label for="km3" class="anc">50</label>
+                            </li>
+                            <li class="sprtBtn">
+                                <input type="radio" name="KMDriven" id="km4" value="80" />
+                                <label for="km4" class="anc">80</label>
+                            </li>
+                            <li class="sprtBtn">
+                                <input type="radio" name="KMDriven" id="km5" value="100" />
+                                <label for="km5" class="anc">100</label>
+                            </li>
+                            <li class="sprtBtn">
+                                <input type="radio" name="KMDriven" id="km6" value="Other" />
+                                <label for="km6" class="anc">Other</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cardAction">
+                        <div class="fuelCost">
+                            Monthly fuel cost
+                            <strong>
+                                <span id="calcultedMFC">₹0</span>
+                                * /
+                                month
+                            </strong>
+                        </div>
+                        <div></div>
+                    </div>
+                </section>
+                <section class="row2_second">
+                    <h2 style="padding-left: 10px;">Popular Cars</h2>
+                    <div class="secondTitle">
+                        <div class="row_container">
+                            <ul>
+                                <li class="card_Right">
+                                    <div class="cardImage">
+                                        <img title="Tata Nexon" alt="Tata Nexon"
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Nexon/9977/1683047876204/front-left-side-47.jpg"
+                                            width="100px" height="100px" />
+                                    </div>
+                                    <div class="holder">
+                                        <a title="Tata Nexon" href="/" style="color: black; text-decoration: none;">Tata
+                                            Nexon</a>
+                                        <div class="price">
+                                            ₹ 8 - 14.60 Lakh<sup>*</sup>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card_Right">
+                                    <div class="cardImage">
+                                        <img title="Mahindra Thar" alt="Mahindra Thar"
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Thar/10743/1690192572470/front-left-side-47.jpg"
+                                            width="100px" height="100px" />
+                                    </div>
+                                    <div class="holder">
+                                        <a title="Mahindra Thar" href="/"
+                                            style="color: black; text-decoration: none;">Mahindra Thar</a>
+                                        <div class="price">
+                                            ₹ 10.54 - 16.78 Lakh<sup>*</sup>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card_Right">
+                                    <div class="cardImage">
+                                        <img title="Hyundai Exter" alt="Hyundai Exter"
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Exter/9482/1684926596004/front-left-side-47.jpg"
+                                            width="100px" height="100px" />
+                                    </div>
+                                    <div class="holder">
+                                        <a title="Hyundai Exter" href="/"
+                                            style="color: black; text-decoration: none;">Hyundai Exter</a>
+                                        <div class="price">
+                                            ₹ 6 - 10.10 Lakh<sup>*</sup>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card_Right">
+                                    <div class="cardImage">
+                                        <img title="Toyota Innova Crysta" alt="Toyota Innova Crysta"
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Innova-Crysta/9612/1680599962805/front-left-side-47.jpg"
+                                            width="100px" height="100px" />
+                                    </div>
+                                    <div class="holder">
+                                        <a title="Toyota Innova Crysta" href="/"
+                                            style="color: black; text-decoration: none;">Toyota Innova Crysta</a>
+                                        <div class="price">
+                                            ₹ 19.99 - 26.05 Lakh<sup>*</sup>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card_Right">
+                                    <div class="cardImage">
+                                        <img title="BMW X7" alt="BMW X7"
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/BMW/X7/10571/1689673096346/front-left-side-47.jpg"
+                                            width="100px" height="100px" />
+                                    </div>
+                                    <div class="holder">
+                                        <a title="Toyota Fortuner" href="/"
+                                            style="color: black; text-decoration: none;">BMW X7</a>
+                                        <div class="price">
+                                            ₹ 1.24 - 1.26 Cr<sup>*</sup>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div> <span style="color:blue; padding: 10%;">View All Best Cars</span></div>
+                    </div>
+                </section>
+
+                <!-- latest cars  -->
+                <section class="row2_second">
+                    <h2 style="margin-left: 10px;">Latest Cars</h2>
+                    <div class="secondTitle">
+                        <div class="row_container">
+                            <ul>
+                                <li class="card_Right">
+                                    <div class="cardImage">
+                                        <img title="Tata Nexon" alt="Tata Nexon"
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Nexon/9977/1683047876204/front-left-side-47.jpg"
+                                            width="100px" height="100px" />
+                                    </div>
+                                    <div class="holder">
+                                        <a title="Tata Nexon" href="/" style="color: black; text-decoration: none;">Tata
+                                            Nexon</a>
+                                        <div class="price">
+                                            ₹ 8 - 14.60 Lakh<sup>*</sup>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card_Right">
+                                    <div class="cardImage">
+                                        <img title="Mahindra Thar" alt="Mahindra Thar"
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Thar/10743/1690192572470/front-left-side-47.jpg"
+                                            width="100px" height="100px" />
+                                    </div>
+                                    <div class="holder">
+                                        <a title="Mahindra Thar" href="/"
+                                            style="color: black; text-decoration: none;">Mahindra Thar</a>
+                                        <div class="price">
+                                            ₹ 10.54 - 16.78 Lakh<sup>*</sup>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card_Right">
+                                    <div class="cardImage">
+                                        <img title="Hyundai Exter" alt="Hyundai Exter"
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Exter/9482/1684926596004/front-left-side-47.jpg"
+                                            width="100px" height="100px" />
+                                    </div>
+                                    <div class="holder">
+                                        <a title="Hyundai Exter" href="/"
+                                            style="color: black; text-decoration: none;">Hyundai Exter</a>
+                                        <div class="price">
+                                            ₹ 6 - 10.10 Lakh<sup>*</sup>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card_Right">
+                                    <div class="cardImage">
+                                        <img title="Toyota Innova Crysta" alt="Toyota Innova Crysta"
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Innova-Crysta/9612/1680599962805/front-left-side-47.jpg"
+                                            width="100px" height="100px" />
+                                    </div>
+                                    <div class="holder">
+                                        <a title="Toyota Innova Crysta" href="/"
+                                            style="color: black; text-decoration: none;">Toyota Innova Crysta</a>
+                                        <div class="price">
+                                            ₹ 19.99 - 26.05 Lakh<sup>*</sup>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card_Right">
+                                    <div class="cardImage">
+                                        <img title="BMW X7" alt="BMW X7"
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/BMW/X7/10571/1689673096346/front-left-side-47.jpg"
+                                            width="100px" height="100px" />
+                                    </div>
+                                    <div class="holder">
+                                        <a title="Toyota Fortuner" href="/"
+                                            style="color: black; text-decoration: none;">BMW X7</a>
+                                        <div class="price">
+                                            ₹ 1.24 - 1.26 Cr<sup>*</sup>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div> <span style="color:blue; padding: 10%;">View All Latest Cars</span></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+<!-------------------    Right Part Ends --------------->
+<!---------------  Disclaimer ----------------->
+        <section class="carSummary" data-read-more="moveTop">
+            <div id="model-highlight" class="gs_readmore " style="height:80px">
+                <strong>Disclaimer</strong>
+                : As per the information entered by you the calculation is performed by EMI Calculator and the amount of
+                installments does not include any other fees charged by the financial institution / banks like
+                processing fee, file charges, etc. The amount is in Indian Rupee rounded off to the nearest Rupee.
+                Depending upon type and use of vehicle, regional lender requirements and the strength of your credit,
+                actual down payment and resulting monthly payments may vary. Exact monthly installments can be found out
+                from the financial institution.
+            </div>
+        </section>
+        <div class="estimateTextWrpr">
+            <div class="breadcrumb">
+                <span class="">
+                    <a title="Home" href="/">
+                        <span>Home > </span>
+                    </a>
+                </span>
+                <span class="">
+                    <span> Car EMI Calculator</span>
+                </span>
+            </div>
+            <div class="exShowroomBottom">
+                <span class="estimatedPrice">*Ex-showroom Price in Ahmedabad</span>
+            </div>
+        </div>
+    </div>
+<!--------------------------  Footer --------------------------->
+    <footer class="footer ">
+        <div class="first_div">
+            <div class="first1">
+                <span class="material-symbols-outlined">
+                    workspace_premium
+                </span>
+                <div>
+                    <h2>India's #1</h4>
+                        <p>Largest Auto portal</p>
+                </div>
+            </div>
+            <div class="first1">
+                <span class="material-symbols-outlined">
+                    directions_car
+                </span>
+                <div>
+                    <h2>Car Sold</h2>
+                    <p>Every 4 minute</p>
+                </div>
+            </div>
+            <div class="first1">
+                <span class="material-symbols-outlined">
+                    sell
+                </span>
+                <div>
+                    <h2>Offers</h2>
+                    <p>Stay updated pay less</p>
+                </div>
+            </div>
+            <div class="first1">
+                <span class="material-symbols-outlined">
+                    car_rental
+                </span>
+                <div>
+                    <h2>Compare</h2>
+                    <p>Decode the right car</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="sec_div">
+            <div class="ul_div">
+                <ul>
+                    <li>
+                        <h2>ABOUT CARDEKHO</h2>
+                    </li>
+                    <li>Careers With Us</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Corporate Polices</li>
+                    <li>Investers</li>
+                    <li>FAQs</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>CONNECT WITH US</h2>
+                    </li>
+                    <li>Feedback</li>
+                    <li>Contact Us</li>
+                    <li>Advertise with us</li>
+
+                </ul>
+                <ul>
+                    <li>
+                        <h2>OTHERS</h2>
+                    </li>
+                    <li>Health Insurance</li>
+                    <li>Term Insurance</li>
+                    <li>Life Insurance</li>
+                    <li>Crack-ED</li>
+                    <li>Personal loan</li>
+                    <li>Tyre Dekho</li>
+                    <li>Battery Dekho</li>
+                    <li>Girnar Vision Fund</li>
+
+                </ul>
+            </div>
+
+            <div class="branch">
+                <p>EXPERIENCE CARDEKHO APP</p>
+                <DIV><span><img src="https://stimg.cardekho.com/pwa/img/appstore.png" alt=""></span>
+                    <span><img src="https://stimg.cardekho.com/pwa/img/playstore.png" alt=""></span>
+                </DIV>
+                <p>CARDEKHO GROUP VENTURES</p>
+                <div><span><img src="https://stimg.cardekho.com/pwa/img/footer-rupyyLogo.svg" alt="">
+                    </span><span><img src="https://stimg.cardekho.com/pwa/img/footer-BdLogo.svg" alt=""></span></div>
+                <DIV><span><img src="https://stimg.cardekho.com/pwa/img/footer-zwLogo.svg" alt=""></span>
+                    <span><img src="https://stimg.cardekho.com/pwa/img/footer-IdLogo.svg" alt=""></span>
+                </DIV>
+            </div>
+        </div>
+        <div class="third_div">
+            <h4>Connect:</h4>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-Twitter"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+        </div>
+    </footer>
+
+<!----------------------- Responsive Footer ----------------->
+    <footer class="responsive_footer">
+        <div class="res_div1">
+            <div class="resf_div1"><img  src="./carDekho-newLogo (1).svg" alt=""></div>
+            <ul>
+                <li  class="fa fa-facebook"></li>
+                <li  class="fa fa-linkedin"></li>
+                <li  class="fa fa-instagram"></li>
+                <li  class="fa fa-youtube"></li>
+                <li class="fa fa-twitter"></li>
+
+            </ul>
+            <div><span><h4></Email:</h4></span><span><p>Support@cardekho.com</p></span></div>
+        </div>
+        <div class="res_div2">
+            <ul>
+                <li>About CARDEKHO <span class="material-symbols-outlined">
+                    expand_more
+                    </span></li>
+                <li>CONNECT WITH US <span class="material-symbols-outlined">
+                    expand_more
+                    </span></li>
+                <li>OTHERS <span class="material-symbols-outlined">
+                    expand_more
+                    </span></li>
+                <li>CARDEKHO GROUP VENTURES <span class="material-symbols-outlined">
+                    expand_more
+                    </span></li>
+
+            </ul>
+        </div>
+        <div class="res_div3">
+            <P>downlod CarDekho App</P>
+            <p>50 Lakh+ downloads . 4.6 star rating</p>
+            <div ><span><img src="https://stimg.cardekho.com/pwa/img/appstore.png" alt=""></span><span><img src="https://stimg.cardekho.com/pwa/img/playstore.png" alt=""></span></div>
+        </div>
+        <div class="res_div3_last">2023 Girnar Software Pvt.Ltd</div>
+    </footer>
+
+</body>
+
+</html>
