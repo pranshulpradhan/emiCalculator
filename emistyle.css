@@ -1,0 +1,1287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto,Sans-Serif,Arial;
+}
+html {
+    color: rgba(36,39,44,.7);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* header */
+@media screen and (min-width: 551px){
+    .responsive_nav{
+        display: none;
+    }
+.header{
+    background: #fff;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 6px 0 rgba(36,39,44,.15);
+    transition: all 0s ease-in;
+    z-index: 4;
+    font-size: 14px;
+}
+.header .topheader{
+    padding: 14px;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+.logorow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.logo a img{
+    height: 42px;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+}
+.searcharea{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+.searcharea .text{
+    width: 90%;
+    border-radius: 5px;
+    
+}
+.searcharea .text input {
+    width: 100%;
+    height: 45px;
+    background-color: #f7f7f7;
+    border: none;
+    padding-left: 5px;
+    box-shadow: inset 0 0 5px #cdcdd5;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 15px;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    
+}
+.searchlens{
+    color: #f7f7f7;
+    background-color: #24272c;
+    width: 60px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.language{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: black;
+    align-items: center;
+    font-size: xx-small;
+}
+.languagelist{
+    padding-top: 5px;
+    border: none;
+}
+.languagelist select{
+    border: none;
+    text-decoration: underline;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    align-items: center;
+}
+.bottomheader{
+    box-shadow: 0 0px 4px 0 rgba(36,39,44,.15);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 8px 5vw;
+    font-size: 14px;
+}
+.categories{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: space-around;
+    color: #24272c;
+}
+.categories a {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(30, 30, 30);
+    text-decoration: none;    
+    padding-top: 5px;
+}
+.tags{
+    display: flex;
+    flex-direction: row;
+    padding: 0 14px;
+    align-items: center;
+}
+.location{
+    display: flex;
+    margin-right: 50px;
+    padding-top:5px;
+    align-items: center;
+    color: gray;
+}
+.place{
+    padding: 0 5px;
+}
+.newcars a{
+    text-decoration: overline solid 3px orangered;
+}
+
+#main-body{
+    padding-top: 60px;
+}
+}
+
+/* responsive header  */
+@media screen and (max-width: 550px){
+    .responsive_nav{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+.responsive_nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 3vw;
+}
+.nav_div1{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10vw;
+    padding-left: 3vw;
+   padding-top: 2vw;
+    align-items: center;
+}
+.nav_div1p{
+    display: flex;
+   
+    
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.nav_div1p img{
+   width:25vw;
+}
+.nav_div1 span{
+    font-size: 30px;
+    color: gray;
+}
+.navs_div2{
+    margin-top: 1vw;
+    width: 100%;
+   padding-left: 3vw;
+   padding-right: 10vw;
+   position: relative;
+}
+.navs_div2 input{
+    width: 95%;
+    border-radius: 1.5rem;
+    height: 7vh;
+    background-color: rgba(221, 218, 218, 0.329);
+    border: none; 
+    padding-left: 8vw;
+   position: relative;
+}
+.navs_div2 span{
+    position: absolute;
+    left: 5vw;
+   bottom: 2vw;
+}
+}
+/* nav-end */
+
+
+body, html {
+    font-family: roboto,Sans-Serif,Arial;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fafafa;
+    /* max-width: fit-content; */
+}
+
+div {
+    display: block;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.cd_container{
+    max-width: 85vw;
+    width: 98%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 551px){
+.rows {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row1 {
+    width: 70%;
+}
+
+.feature_tag2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature_tag1{
+    width: auto;
+  gap:2vw;
+  display: flex;
+  justify-content: space-between;
+   margin-top: 3vh; 
+ }
+    #section8 ul {
+        display: grid;
+        grid-template-columns: repeat(3,30%);
+        grid-template-rows: repeat(2,45%);
+        gap: 5vw;
+    width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .rows_res{
+        margin-left: -10px;
+        margin-right: -10px;
+        justify-content: space-evenly;
+    }
+    .row1 {
+        width: 100%;
+    }
+    .feature_tag2 {
+        justify-content: space-evenly;
+    }
+    .feature_tag1{
+        width: auto;
+      gap:2vw;
+      display: flex;
+      justify-content: space-between;
+       margin-top: 3vh; 
+       overflow-x: scroll;
+     }
+}
+
+.first{
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(36,39,44,.15);
+    padding: 15px 20px 20px;
+}
+
+h1, h2 {
+    color: #24272c;
+    font-weight: 500;
+}
+
+h2, h3 {
+    font-size: 23px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.first p {
+    font-size: 16px;
+    line-height: 1.63;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.first .subTitle {
+    display: block;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.emiCalculate {
+    position: inherit;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: none;
+    box-shadow: 0 1px 3px rgba(36,39,44,.15);
+    padding: 15px 20px 20px;
+    position: inherit;
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.Brand, .Model, .Variant {
+    background: #fff;
+    border: 1px solid rgba(36,39,44,.3);
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 16px;
+    height: 48px;
+    padding: 0 30px 0 16px;
+    text-shadow: 0 0 0 #24272c;
+    width: 100%;
+}
+
+select{
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    width: 100%;
+}
+
+option{
+    color: rgba(59, 61, 63, 0.7);
+}
+
+button, input, select, textarea {
+    display: block;
+    font: inherit;
+    margin: 0;
+}
+
+button, input {
+    overflow: visible;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.div1, .div2, .div3
+{
+   width: 250px;
+}
+
+/* .feature_tag2{
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+/* emiInnerPriceSlider */
+.emiCalculate .emiInner {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.emiCalculateSlider .emiInner .downPayment {
+    margin-top: 29px;
+}
+
+
+.emiCalculate .downPayment {
+    margin-top: 0;
+}
+
+.topText {
+    margin: 0;
+}
+
+.emiCalculate .emiInner .downPayment .topText {
+    color: rgba(36,39,44,.7);
+    font-size: 14px;
+    line-height: 1.36;
+}
+
+.slider_minVal {
+    color: #24272c;
+    font-weight: 500;
+}
+
+.topText, .priceRange{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sliderName, .slider_minVal
+{
+   display: inline;
+}
+
+.emiCalculate .emiInner .loanPeriod>span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.emiCalculate .emiInner .loanPeriod ul {
+    border: none;
+    overflow-x: auto;
+    white-space: nowrap;
+    float: left;
+    height: 39px;
+    width: 100%;
+}
+
+.emiCalculate .emiInner .loanPeriod li {
+    border-bottom: 1px solid rgba(36,39,44,.7);
+    border-top: 1px solid rgba(36,39,44,.7);
+    display: inline-block;
+    float: none;
+    height: 39px;
+    width: 20.28%;
+}
+
+.emiCalculateSlider .emiInner .loanPeriod li {
+    border-right: 1px solid rgba(36,39,44,.7);
+    float: left;
+    height: 38px;
+    width: 14.28%;
+}
+
+.emiCalculate .emiInner .loanPeriod li:first-child {
+    border-left: 1px solid rgba(36,39,44,.7);
+} 
+
+
+.emiCalculateSlider .emiInner .loanPeriod li .loan_Buttons {
+    height: 38px;
+    width: 100%;
+}
+
+.loan_Buttons {
+    color: #24272c;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 20px;
+    padding-left: 34px;
+    position: inherit;
+    vertical-align: middle;
+}
+
+button, input, select, textarea {
+    display: block;
+    font: inherit;
+    margin: 0;
+}
+
+button, input {
+    overflow: visible;
+}
+
+.loan_Buttons input {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.loan_Buttons__indicator {
+    background: #fff;
+    border: 1px solid rgba(36,39,44,.5);
+    border-radius: 2px;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    transition: default;
+    width: 18px;
+}
+
+#loanPeriod1{
+    background-color: #24272c;
+}
+
+#loanPeriod1, .gs_control__indicator{
+    color: #fff;
+}
+
+footer, header, nav, section {
+    display: block;
+}
+
+
+/* amount details  */
+.emiCalculateSlider .emiInner .amountDetail {
+    margin-top: 20px
+}
+
+.emiCalculateSlider .emiInner .amountDetail li {
+    border-bottom: 1px solid rgba(36,39,44,.15);
+    color: rgba(36,39,44,.7);
+    font-size: 12px;
+}
+
+.emiCalculateSlider .emiInner .amountDetail li div {
+    width: 100%;
+}
+
+
+.amt_p{
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.emiCalculateSlider .emiInner .amountDetail li .price {
+    color: #24272c;
+    float: right;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: right;
+    vertical-align: middle
+}
+
+.emiInner .loanPeriod .sprtBtn label {
+    border: 1px solid rgba(36,39,44,.1);
+    border-left: none;
+    color: #24272c;
+    display: inline-block;
+    font-size: 12px;
+    height: 100%;
+    line-height: normal;
+    padding: 6px 4px 4px;
+    text-align: center;
+    width: 100%
+}
+
+.emiInner .loanPeriod .sprtBtn input[type=radio]:checked+label {
+    background: #24272c;
+    border: 1px solid #24272c;
+    color: #fff;
+}
+
+.emiInner .loanPeriod .sprtBtn input {
+    background: 0 0;
+    border: none;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+}
+
+/* total amount button section  */
+.emiCalculateSlider .emiInner .totalAmount {
+    background: #fff;
+    bottom: 0;
+    box-shadow: 0 -2px 4px 0 rgba(36,39,44,.15);
+    height: 64px;
+    left: 0;
+    padding: 10px 20px 14px;
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.emiCalculateSlider .emiInner .totalAmount .buttonholder {
+    float: right
+}
+
+
+.emiCalculateSlider .emiInner .totalAmount {
+    border-radius: 0;
+    box-shadow: none;
+    height: 120px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    width: 100%
+}
+
+.emiCalculateSlider .emiTotaleBlock {
+    border-top: 1px solid rgba(36,39,44,.15)
+}
+
+.emiCalculateSlider .emiTotaleBlock .social {
+    color: rgba(36,39,44,.5);
+    position: absolute;
+    right: 0;
+    top: 20px
+}
+
+.emiCalculateSlider .emiTotaleBlock .emiTotaleIn {
+    color: #24272c;
+    padding: 30px 0;
+    text-align: center
+}
+
+.emiCalculateSlider .emiTotaleBlock .emiTotaleIn .permonthprice {
+    border-right: 1px solid rgba(36,39,44,.15);
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 34px;
+    padding-right: 10px;
+    position: relative;
+    vertical-align: top
+}
+
+.emiCalculateSlider .emiTotaleBlock .emiTotaleIn .permonthprice span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -11px;
+    padding: 0
+}
+
+.emiCalculateSlider .emiTotaleBlock .emiTotaleIn .emiTotale {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 34px;
+    margin-left: 10px;
+    vertical-align: middle
+}
+
+.emiCalculateSlider .emiTotaleBlock .emiTotaleIn .emiTotale .emitext {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 0
+}
+
+.emiCalculateSlider .emiButtonContainer {
+    margin: 0 -20px
+}
+
+.emiCalculateSlider .emiButtonContainer .emiButtonInner {
+    border-top: 1px solid rgba(36,39,44,.15)
+}
+
+.emiCalculateSlider .emiButtonContainer .emiButtonInner .buttonHolderTop {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center
+}
+
+.emiCalculateSlider .emiButtonContainer .emiButtonInner .buttonHolder {
+    display: inline-block;
+    margin: 0 10px;
+    width: 45%
+}
+
+.emiCalculateSlider .emiButtonContainer .emiButtonInner .buttonHolder .button {
+    margin-top: 20px;
+    max-width: 300px
+}
+
+
+
+.emiCalculateSlider .emiTotaleBlock .emiTotaleIn {
+    color: #24272c;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.emiCalculateSlider .emiTotaleBlock .emiTotaleIn .permonthprice span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -11px;
+    padding: 0;
+} 
+
+.button {
+    background: #f75d34;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    height: 48px;
+    line-height: 47px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.emiCalculateSlider .callDesc {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.valuationPage{
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(36,39,44,.15);
+    padding: 15px 20px 20px;
+}
+
+#sellCar.valuationPage h3 {
+    font-size: 16px;
+    line-height: normal;
+    margin: 0;
+    padding-right: 20px;
+    position: relative;
+    text-transform: inherit
+}
+
+#sellCar.valuationPage h3 span {
+    font-size: 15px;
+    line-height: 18px;
+    position: absolute;
+    right: 2px;
+    top: 0
+}
+
+#sellCar.valuationPage{
+    padding-bottom: 0
+}
+
+#sellCar.valuationPage{
+    font-size: 16px;
+    margin: 0
+}
+
+#sellCar.valuationPagep {
+    padding: 10px 0 0
+}
+
+.accordion .borderBottom {
+    border-bottom: 1px solid rgba(36,39,44,.1);
+}
+
+.toggleAccordion{
+    /* display: flex; */
+    justify-content: space-between;
+    position:relative
+}
+
+.accordion {
+    display: inline-block;
+    width: 100%;
+}
+
+.accordion h3 {
+    color: #24272c;
+    font-size: 12px;
+    line-height: 42px;
+    text-transform: uppercase
+}
+
+.accordion h3 span {
+    float: right;
+    font-size: 12px;
+    line-height: 42px
+}
+
+.accordion .shadow24>div>h3 {
+    margin-bottom: 0
+}
+
+/* .toggleAccordion{ */
+    /* display: flex; */
+    /* justify-content: space-between;
+    position:relative
+} */
+
+.specsFeaturesBlock{
+display: flex;
+padding: 5px 10px 10px;
+}
+
+
+.rows2 {
+    float: left;
+    width: 25%;
+    min-height: 1px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row2_first{
+    margin-bottom: 20px;
+    margin-top: 5vh;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(36,39,44,.15);
+    padding: 15px 20px 20px;
+}
+
+/* right */
+.row2_first .drivingKM .heading {
+    color: #24272c;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px
+}
+
+.row2_first .drivingKM .heading span {
+    float: right
+}
+
+.row2_first .drivingKM .btnWpr li {
+    height: 30px;
+    position: relative;
+    width: 14.2857%
+}
+
+/* sprtn */
+.row2_first .drivingKM .sprtBtn {
+    display: inline-block
+}
+
+.row2_first .drivingKM .sprtBtn input {
+    background: 0 0;
+    border: none;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%
+}
+
+.row2_first .drivingKM .sprtBtn label {
+    border: 1px solid rgba(36,39,44,.1);
+    border-left: none;
+    color: #24272c;
+    display: inline-block;
+    font-size: 12px;
+    height: 100%;
+    line-height: normal;
+    padding: 6px 4px 4px;
+    text-align: center;
+    width: 100%
+}
+
+.row2_first .drivingKM .sprtBtn input[type=radio]:checked+label {
+    background: #24272c;
+    border: 1px solid #24272c;
+    color: #fff
+}
+
+.row2_first .cardAction {
+    border-top: 1px solid rgba(36,39,44,.15);
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 19px 16px 16px
+}
+
+.row2_first .cardAction .fuelCost {
+    color: rgba(36,39,44,.5);
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 20px;
+    width: auto
+}
+
+.row2_first .cardAction .fuelCost strong {
+    color: #24272c;
+    display: block;
+    font-size: 24px;
+    font-weight: 500
+}
+.row2_second {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(36,39,44,.15);
+    margin-top: 20px;
+}
+
+.card_Right {
+    display: flex;
+    padding-left: 10px;
+    gap: 1rem;
+}
+
+/* .card img {
+    display: block;
+    width: 75%;
+} */
+
+a img, img {
+    max-width: 100%;
+}
+
+/* .cd_container .row2_second .card img {
+    height: 100px;
+} */
+
+
+/* section block  */
+/* section2 responsive */
+.sec2_res{
+    display: none;
+}
+
+/* section2 */
+.section2{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(36,39,44,.15);
+    padding: 3vh 2vw;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 5vh;
+}
+.section2 ul{
+    display: flex;
+  
+    width:38%;
+    list-style:none;
+    justify-content:space-between;
+    
+}
+
+/* .feature_tag1{
+    width: auto;  
+    overflow-x: scroll;
+  gap:2vw;
+  display: flex;
+  justify-content: space-between;
+   margin-top: 3vh; 
+ } */
+
+.tag1{
+   
+    height: 50vh;
+    box-shadow: 0 1px 3px rgba(36,39,44,.15);
+    
+}
+.section2 li:hover{
+    cursor: pointer;
+   color: red;
+}
+.tt1 span{
+    display: none;
+}
+
+
+.tag1 div{
+   
+   margin: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+  height: auto;
+}
+.tag1 input{
+    margin-top: 3vh;
+    height: 7vh;
+    background-color: white;
+    color: red;
+   border-color: red;
+}
+.section2 img{
+    width:250px;
+}
+
+
+    .section2 ul{
+        width:100%;
+    }
+    .rightCar{
+        width: 50%;
+    }
+
+ .tag1{
+    background-color: white;
+    height: auto;
+  border-radius: 0.5rem;
+    
+ }
+ .section2 img{
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+ }
+
+/* section8 */
+#section8 ul{
+    width:100%;
+    
+  
+}
+#section8 li{
+ text-align: center;
+  box-shadow: 0 1px 3px rgba(36,39,44,.15);
+  margin: 1vw;
+}
+#section8 img{
+    margin-top: 2vh;
+    width:90%;
+}
+#section8 h5{
+    margin-top: 2vh ;
+    margin-bottom: 2vh;
+    color: rgb(94, 89, 89);
+}
+
+/* section12 */
+.section12{
+    width: 90%;
+    height: auto;
+    margin: 3vw 5vw 0vw 5vw;
+    box-shadow: 0 1px 3px rgba(36,39,44,.15);
+    padding: 3vh 2vw 5vw;
+    overflow: hidden;
+ }
+ .grid2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:50% 50% ;
+    margin-top: 5vh;
+    row-gap: 5vh;
+
+ }
+ /* .one{
+    display: flex;
+   
+ } */
+ .section12 img{
+    width: 40%;
+ }
+ .one div{
+    padding: 1vw;
+    
+ }
+ .one h5{
+    font-size: 14px;
+    color: rgb(61, 59, 59);
+    line-height: 1.5rem;
+ }
+ .one p{
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: gray;
+ }
+
+.breadcrumb{
+    display: flex;
+}
+
+.estimateTextWrpr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carSummary{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(36,39,44,.15);
+    padding: 15px 20px 20px;
+}
+
+.gs_readmore{
+    overflow: hidden;
+}
+
+/* FOOTER PART  */
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  
+   margin-top: 8vh;
+ 
+}
+.footer .first_div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vw;
+    padding-right: 1vw;
+}
+.footer .first_div p{
+    color: gray;
+    margin-top: 1vh;
+}
+ .first_div .first1{
+    display: flex;
+    align-items: center;
+}
+.first1 span{
+    font-size: 50px;
+}
+.footer .sec_div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid  lightgray;
+    border-bottom: 1px solid  lightgray;
+    
+    margin-top: 2vw;
+    padding: 1vw 5vw 0vw 3vw;
+    
+}
+.sec_div .ul_div{
+    display: flex;
+ 
+ width: 70%;  
+ height: 50vh;
+ justify-content: space-around;
+ 
+   
+}
+.ul_div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 2.5rem;
+    font-size: 14px;
+    list-style: none;
+    word-spacing: 0.2rem;
+}
+.sec_div .branch{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.branch div{
+  display: flex;
+  justify-content: space-between;
+}
+.branch div span{
+   margin-right: 1vw;
+}
+.footer .third_div{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 1vw 6vw;
+    gap: 1vw;
+    font-size: 25px;
+}
+
+.responsive_footer{
+    display: none;
+}
+
+@media screen and (max-width: 550px){
+.footer{
+    display: none;
+}
+
+.responsive_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 5vh;
+    height: 80vh;
+    padding-left: 5vw;
+    padding-top: 3vw;
+    padding-right: 3vw;
+    font-size: 13px;
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(36,39,44,.15);
+    margin-top: 5vw;
+ }
+ .res_div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+   
+    height: 25%;
+}
+.res_div1 img{
+    width: 20vw;
+}
+.res_div1 ul{
+    width: 40%;
+    display: flex;
+justify-content: space-around;
+
+list-style: none;
+}
+.res_div2{
+    height:35%; 
+   border-bottom: 1px solid lightgray;
+   border-top: 1px solid  lightgray;
+   padding-bottom: 1vh;
+}
+.res_div2 ul{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   font-size: 14px;
+   height: 100%;
+   list-style: none;
+ 
+}
+.res_div2 ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.res_div3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25%;
+}
+.res_div3 div{
+    display: flex;
+    gap:5vw;
+}
+.res_div3_last{
+    text-align: center;
+}
+}
